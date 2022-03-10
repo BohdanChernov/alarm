@@ -34,9 +34,11 @@ pipeline {
         stage('Download') {
              steps {
                  echo 'Hello World Download'
-                 script {
-                     scripts=load "app/src/main/groovy/Download.groovy"
-                 }
+
+                 sh 'gradle run'
+//                 script {
+//                     scripts=load "app/src/main/groovy/Download.groovy"
+//                 }
                  echo 'Hello World Download Finish'
              }
         }
