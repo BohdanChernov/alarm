@@ -35,11 +35,15 @@ pipeline {
              steps {
                  echo 'Hello World Download'
 
-                 sh 'chmod +x gradlew'
-                 sh './gradlew run'
+//                 sh 'chmod +x gradlew'
+//                 sh './gradlew run'
 //                 script {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
+
+                 sh 'git add files/.'
+                 sh 'git commit -m "added files"'
+                 sh 'git push origin master'
                  echo 'Hello World Download Finish'
              }
         }
