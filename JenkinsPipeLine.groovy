@@ -44,7 +44,7 @@ pipeline {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
 //                 sh 'git checkout'
-                 sh 'git checkout master'
+//                 sh 'git checkout master'
 //                 sh 'sudo git pull'
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
