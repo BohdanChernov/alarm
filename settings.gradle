@@ -9,4 +9,4 @@
 
 rootProject.name = 'alarm'
 include('app')
-include('gate')
+//include('gate')
