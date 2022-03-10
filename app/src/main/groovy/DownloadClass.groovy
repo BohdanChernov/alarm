@@ -19,7 +19,7 @@ class DownloadClass {
         sql.eachRow('SELECT * from test_table') { row ->
             println row
             String id = row.id
-            Path newFilePath = Paths.get(id + '.txt')
+            Path newFilePath = Paths.get('../files/'+id + '_script.txt')
             if (Files.exists(newFilePath)) {
                 Files.delete(newFilePath)
                 Files.createFile(newFilePath)
