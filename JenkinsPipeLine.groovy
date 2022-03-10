@@ -35,7 +35,7 @@ pipeline {
              steps {
                  echo 'Hello World Download'
 
-                 sh './gradlew run'
+                 sh 'sudo ./gradlew run'
 //                 script {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
