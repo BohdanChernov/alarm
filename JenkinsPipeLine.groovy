@@ -44,8 +44,8 @@ pipeline {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
 //                 sh 'git checkout'
-//                 sh 'git checkout master'
-//                 sh 'sudo git pull'
+                 sh 'git checkout master'
+                 sh 'sudo git pull'
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
 
@@ -56,7 +56,7 @@ pipeline {
 
 //                 sh 'git push origin master'
 
-                 sh 'sudo git push https://BohdanChernov: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@github.com/BohdanChernov/alarm.git --all'
+                 sh 'sudo git push https://BohdanChernov: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@github.com/BohdanChernov/alarm.git --all'
 
                  echo 'Hello World Download Finish'
              }
