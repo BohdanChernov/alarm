@@ -45,11 +45,12 @@ pipeline {
 //                 }
 //                 sh 'git checkout'
                  sh 'git checkout master'
+                 sh 'git checkout pull'
                  sh 'git add files/.'
                  sh 'git commit -m "added files"'
 
 //                 sh 'git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git'
-//                 sh 'git push https://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@github.com/BohdanChernov/alarm.git HEAD:master'
+                 sh 'git push https://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@github.com/BohdanChernov/alarm.git'
 //                 sh 'git push https://github.com/BohdanChernov/alarm.git'
 //                 sh 'git remote set-url origin https://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@github.com/BohdanChernov/alarm.git'
 
