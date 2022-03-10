@@ -45,7 +45,7 @@ pipeline {
 //                 }
 //                 sh 'git checkout'
                  sh 'git checkout master'
-                 sh 'sudo git pull'
+//                 sh 'sudo git pull'
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
 
