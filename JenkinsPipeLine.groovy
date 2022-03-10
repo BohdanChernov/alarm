@@ -56,7 +56,7 @@ pipeline {
 
 //                 sh 'git push origin master'
 
-                 sh 'sudo git push https://BohdanChernov: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@github.com/BohdanChernov/alarm.git --all'
+                 sh 'sudo git push https://BohdanChernov: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@github.com/BohdanChernov/alarm.git --all'
 
                  echo 'Hello World Download Finish'
              }
