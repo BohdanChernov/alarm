@@ -43,7 +43,7 @@ pipeline {
 //                 script {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
-
+//                 sh 'git checkout'
                  sh 'git add files/.'
                  sh 'git commit -m "added files"'
 
