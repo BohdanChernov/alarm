@@ -32,9 +32,9 @@ pipeline {
             }
         }
         stage('Download') {
-            String GITHUB_ACCESS_TOKEN ="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"
-            String GITHUB_USERNAME = "BohdanChernov"
-            String REPOSITORY_NAME = "alarm"
+//            String GITHUB_ACCESS_TOKEN ="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"
+//            String GITHUB_USERNAME = "BohdanChernov"
+//            String REPOSITORY_NAME = "alarm"
              steps {
                  echo 'Hello World Download'
 
