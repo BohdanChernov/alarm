@@ -45,9 +45,9 @@ pipeline {
 //                 }
 //                 sh 'git checkout'
                  sh 'git checkout master'
-                 sh 'git pull'
-                 sh 'git add files/.'
-                 sh 'git commit -m "added files"'
+                 sh 'sudo git pull'
+                 sh 'sudo git add files/.'
+                 sh 'sudo git commit -m "added files"'
 
 //                 sh 'git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git'
 //                 sh 'git push https://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@github.com/BohdanChernov/alarm.git'
