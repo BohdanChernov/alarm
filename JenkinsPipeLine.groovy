@@ -32,27 +32,14 @@ pipeline {
             }
         }
         stage('Download') {
-//            String GITHUB_ACCESS_TOKEN ="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"
-//            String GITHUB_USERNAME = "BohdanChernov"
-//            String REPOSITORY_NAME = "alarm"
              steps {
                  echo 'Hello World Download'
-//                 echo '========================='
-//                 sh 'printenv'
-//                 echo '========================='
-//                 sh 'chmod +x gradlew'
-//                 sh './gradlew run'
-//                 script {
-//                     scripts=load "app/src/main/groovy/Download.groovy"
-//                 }
-//                 sh 'git checkout'
-//                 echo '^^^^^^^^^^^^^^^^^^^^'
-//                 echo 'GIT_TOKEN: ' $GIT_TOKEN
-//                 sh 'echo GETTING ENV'
-//                 sh 'env'
-//                 sh 'echo $GIT_TOKEN'
-//                 echo '^^^^^^^^^^^^^^^^^^^^'
 
+                 sh 'chmod +x gradlew'
+                 sh './gradlew run'
+                 script {
+                     scripts=load "app/src/main/groovy/Download.groovy"
+                 }
 
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
