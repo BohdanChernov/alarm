@@ -37,26 +37,24 @@ pipeline {
 //            String REPOSITORY_NAME = "alarm"
              steps {
                  echo 'Hello World Download'
-
+                 echo '========================='
+                 sh 'printenv'
+                 echo '========================='
 //                 sh 'chmod +x gradlew'
 //                 sh './gradlew run'
 //                 script {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
 //                 sh 'git checkout'
+
+                 sh 'echo $GIT_TOKEN'
+                 /*
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
-
-//                 sh 'git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git'
-//                 sh 'git push https://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@github.com/BohdanChernov/alarm.git'
-//                 sh 'git push https://github.com/BohdanChernov/alarm.git'
-//                 sh 'git remote set-url origin https://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@github.com/BohdanChernov/alarm.git'
-
-//                 sh 'git push origin master'
-
-                 sh 'sudo git push https://BohdanChernov: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@github.com/BohdanChernov/alarm.git --all'
+                 sh 'sudo git push https://BohdanChernov:$GIT_TOKEN@github.com/BohdanChernov/alarm.git --all'
+                  */
 
                  echo 'Hello World Download Finish'
              }
