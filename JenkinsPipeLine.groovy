@@ -46,9 +46,11 @@ pipeline {
 //                     scripts=load "app/src/main/groovy/Download.groovy"
 //                 }
 //                 sh 'git checkout'
+                 echo '^^^^^^^^^^^^^^^^^^^^'
+//                 echo 'GIT_TOKEN: ' $GIT_TOKEN
+                 echo '$GIT_TOKEN'
+                 echo '^^^^^^^^^^^^^^^^^^^^'
 
-                 echo 'GIT_TOKEN: ' $GIT_TOKEN
-                 echo $GIT_TOKEN
                  /*
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
