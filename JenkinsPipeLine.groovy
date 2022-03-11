@@ -47,12 +47,13 @@ pipeline {
 //                 }
 //                 sh 'git checkout'
 
+                 sh 'echo $GIT_TOKEN'
                  /*
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
-                 sh 'sudo git push https://BohdanChernov:<token>@github.com/BohdanChernov/alarm.git --all'
+                 sh 'sudo git push https://BohdanChernov:$GIT_TOKEN@github.com/BohdanChernov/alarm.git --all'
                   */
 
                  echo 'Hello World Download Finish'
