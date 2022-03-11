@@ -48,7 +48,7 @@ pipeline {
 //                 sh 'git checkout'
                  echo '^^^^^^^^^^^^^^^^^^^^'
 //                 echo 'GIT_TOKEN: ' $GIT_TOKEN
-                 echo '$GIT_TOKEN'
+                 sh 'echo $GIT_TOKEN'
                  echo '^^^^^^^^^^^^^^^^^^^^'
 
                  /*
