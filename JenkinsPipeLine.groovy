@@ -37,9 +37,6 @@ pipeline {
 
                  sh 'chmod +x gradlew'
                  sh './gradlew run'
-                 script {
-                     scripts=load "app/src/main/groovy/Download.groovy"
-                 }
 
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
