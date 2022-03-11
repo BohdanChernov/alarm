@@ -4,9 +4,10 @@ plugins {
 }
 
 application {
-//    mainClass = 'DownloadClass'
     mainClass = 'Download'
 }
+
+
 
 repositories {
     mavenCentral()
@@ -19,4 +20,15 @@ dependencies {
 
     testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
     testImplementation 'junit:junit:4.13.2'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Download'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }

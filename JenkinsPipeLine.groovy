@@ -35,11 +35,15 @@ pipeline {
              steps {
                  echo 'Hello World Download'
 
-                 sh 'chmod +x gradlew'
-                 sh './gradlew run'
-
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
+
+//                 sh 'chmod +x gradlew'
+//                 sh './gradlew run'
+
+                 sh 'java -jar app.jar'
+
+
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
                  sh 'sudo git push https://BohdanChernov:$GIT_TOKEN@github.com/BohdanChernov/alarm.git --all'
