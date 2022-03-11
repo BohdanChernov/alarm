@@ -47,7 +47,7 @@ pipeline {
 //                 }
 //                 sh 'git checkout'
 
-                 sh 'echo $GIT_TOKEN'
+                 echo 'GIT_TOKEN: $GIT_TOKEN'
                  /*
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
