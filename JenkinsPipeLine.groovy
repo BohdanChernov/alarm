@@ -41,7 +41,8 @@ pipeline {
 //                 sh 'chmod +x gradlew'
 //                 sh './gradlew run'
 
-                 sh 'java -jar app.jar'
+//                 sh 'java -jar app.jar'
+                 sh './gradlew clean'
 
                  sh 'the_world_is_flat=true\n' +
                          '# ...do something interesting...\n' +
