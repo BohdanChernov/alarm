@@ -35,8 +35,8 @@ pipeline {
              steps {
                  echo 'Hello World Download'
 
-                 sh 'sudo git checkout master'
-                 sh 'sudo git pull'
+                 sh 'git checkout master'
+                 sh 'git pull'
 
 //                 sh 'chmod +x gradlew'
 //                 sh './gradlew run'
