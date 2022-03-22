@@ -42,7 +42,7 @@ pipeline {
 //                 sh './gradlew run'
 
 //                 sh 'java -jar app.jar'
-                 sh './gradlew clean'
+                 sh './gradlew -v'
 
                  sh 'the_world_is_flat=true\n' +
                          '# ...do something interesting...\n' +
