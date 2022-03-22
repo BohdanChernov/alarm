@@ -38,7 +38,7 @@ pipeline {
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
 
-//                 sh 'chmod +x gradlew'
+                 sh 'chmod +x gradlew'
 //                 sh './gradlew run'
 
 //                 sh 'java -jar app.jar'
