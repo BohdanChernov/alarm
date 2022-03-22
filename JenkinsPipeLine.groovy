@@ -43,6 +43,12 @@ pipeline {
 
                  sh 'java -jar app.jar'
 
+                 sh 'the_world_is_flat=true\n' +
+                         '# ...do something interesting...\n' +
+                         'if [ "$the_world_is_flat" = true ] ; then\n' +
+                         '    echo \'Be careful not to fall off!\'\n' +
+                         'fi'
+
 
                  sh 'sudo git add files/.'
                  sh 'sudo git commit -m "added files"'
