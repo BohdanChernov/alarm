@@ -51,10 +51,11 @@ pipeline {
 
 
                  sh 'sudo git add files/.'
-                 sh 'sudo git commit -m "added files"'
+//                 sh 'sudo git commit -m "added files"'
+                 sh 'sudo git diff --quiet && git diff --staged --quiet || git commit -am \'Added license headers\''
                  sh 'sudo git push https://BohdanChernov:$GIT_TOKEN@github.com/BohdanChernov/alarm.git --all'
-                 sh 'sudo git checkout master'
-                 sh 'sudo git pull'
+//                 sh 'sudo git checkout master'
+//                 sh 'sudo git pull'
 
 
                  echo 'Hello World Download Finish'
