@@ -57,7 +57,7 @@ pipeline {
                  echo 'Hello World Download2'
 
 
-                 sh 'sudo git checkout master'
+                 sh 'sudo git checkout new_one'
                  sh 'sudo git pull'
 
 //                 sh 'chmod +x gradlew'
