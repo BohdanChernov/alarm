@@ -35,6 +35,11 @@ pipeline {
              steps {
                  echo 'Hello World Download'
 
+                 echo "env.BRANCH_NAME"
+                 echo 'BUILD_NUMBER: ${BUILD_NUMBER}'
+                 echo 'BRANCH_NAME: ${env.BRANCH_NAME}'
+                 echo 'BRANCH: ${BRANCH}'
+
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
 
