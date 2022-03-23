@@ -36,7 +36,12 @@ pipeline {
                  echo 'Hello World Download1'
                  sh 'printenv'
 
+
+                 echo '===================='
                  echo "$GIT_BRANCH"
+                 echo "$BRANCH_NAME"
+                 echo '===================='
+
 //                 echo "$BRANCH_NAME"
 //                 echo "$BUILD_NUMBER"
 //                 echo "$BRANCH"
