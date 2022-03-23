@@ -35,6 +35,10 @@ pipeline {
              steps {
                  echo 'Hello World Download1'
 
+                 echo "$GIT_BRANCH"
+                 echo "$BRANCH_NAME"
+                 echo "$BUILD_NUMBER"
+                 echo "$BRANCH"
                  echo "env.BRANCH_NAME"
                  echo 'BUILD_NUMBER: ${BUILD_NUMBER}'
                  echo 'BRANCH_NAME: ${env.BRANCH_NAME}'
