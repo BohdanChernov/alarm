@@ -33,12 +33,15 @@ pipeline {
         }
         stage('Download') {
              steps {
-                 echo 'Hello World Download'
+                 echo 'Hello World Download1'
 
                  echo "env.BRANCH_NAME"
                  echo 'BUILD_NUMBER: ${BUILD_NUMBER}'
                  echo 'BRANCH_NAME: ${env.BRANCH_NAME}'
                  echo 'BRANCH: ${BRANCH}'
+
+                 echo 'Hello World Download2'
+
 
                  sh 'sudo git checkout master'
                  sh 'sudo git pull'
